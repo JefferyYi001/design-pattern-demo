@@ -1,8 +1,9 @@
-package com.jeffery.singleton1;
+package com.jeffery.singleton2;
 
 /**
- * @author jeffery.yi
- * @since 12-02-2020
+ * @time 2020/12/2 - 23:02
+ * @Version 1.0
+ * @Author Jeffery Yi
  */
 public class SingletonDemo {
     public static void main(String[] args) {
@@ -18,8 +19,13 @@ class Singleton {
     private Singleton(){
     }
     // 2. 类的内部创建对象实例
-    private static final Singleton singleton = new Singleton();
-    // 3. 对外提供静态方法返回实例
+    private static Singleton singleton;
+
+    // 3. 在静态代码块中初始化对象实例
+    static {
+        singleton = new Singleton();
+    }
+    // 4. 对外提供静态方法返回实例
     public static Singleton getInstance() {
         return singleton;
     }
