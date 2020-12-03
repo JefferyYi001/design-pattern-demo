@@ -1,6 +1,7 @@
 package com.jeffery.singleton1;
 
 /**
+ * 饿汉式 (静态常量)
  * @author jeffery.yi
  * @since 12-02-2020
  */

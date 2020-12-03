@@ -1,8 +1,9 @@
-package com.jeffery.singleton2;
+package com.jeffery.singleton3;
 
 /**
- * 饿汉式 (静态代码块)
- * @time 2020/12/2 - 23:02
+ * 懒汉式（线程不安全）
+ *
+ * @time 2020/12/3 - 8:01
  * @Version 1.0
  * @Author Jeffery Yi
  */
@@ -15,19 +16,20 @@ public class SingletonDemo {
         System.out.println("instance2.hashCode = " + instance2.hashCode());
     }
 }
+
 class Singleton {
     // 1. 私有化构造器
-    private Singleton(){
+    private Singleton() {
     }
+
     // 2. 类的内部创建对象实例
     private static Singleton singleton;
 
-    // 3. 在静态代码块中初始化对象实例
-    static {
-        singleton = new Singleton();
-    }
-    // 4. 对外提供静态方法返回实例
+    // 3. 对外提供静态方法返回实例
     public static Singleton getInstance() {
+        if (singleton == null) {
+            singleton = new Singleton();
+        }
         return singleton;
     }
 }
