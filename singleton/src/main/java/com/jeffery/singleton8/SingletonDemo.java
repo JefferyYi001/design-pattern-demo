@@ -19,5 +19,5 @@ public class SingletonDemo {
 }
 
 enum Singleton {
-    INSTANCE;
+    INSTANCE
 }
