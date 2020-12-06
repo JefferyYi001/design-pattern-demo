@@ -1,4 +1,4 @@
-package com.jeffery.factorymethod;
+package com.jeffery.absfactory1;
 
 /**
  * @time 2020/12/5 - 23:30
@@ -10,7 +10,6 @@ interface FactoryBMW {
 }
 
 class FactoryBMW320 implements FactoryBMW {
-
     @Override
     public BMW320 createBMW() {
         return new BMW320();
