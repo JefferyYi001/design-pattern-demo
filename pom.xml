@@ -12,6 +12,7 @@
         <module>factory</module>
         <module>prototype</module>
         <module>builder</module>
+        <module>adapter</module>
     </modules>
 
 </project>
