@@ -1,4 +1,4 @@
-package com.jeffery.designpatern.decorator;
+package com.jeffery.designpattern.decorator;
 
 /**
  * @author jeffery.yi

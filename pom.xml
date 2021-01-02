@@ -15,6 +15,8 @@
         <module>adapter</module>
         <module>bridge</module>
         <module>decorator</module>
+        <module>TreeNode</module>
+        <module>composite</module>
     </modules>
 
 </project>
