@@ -21,6 +21,7 @@
         <module>proxy</module>
         <module>template</module>
         <module>command</module>
+        <module>visitor</module>
     </modules>
 
 </project>
