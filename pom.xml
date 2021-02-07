@@ -24,6 +24,12 @@
         <module>visitor</module>
         <module>iterator</module>
         <module>observer</module>
+        <module>mediator</module>
+        <module>interpreter</module>
+        <module>memento</module>
+        <module>state</module>
+        <module>strategy</module>
+        <module>chain</module>
     </modules>
 
 </project>
